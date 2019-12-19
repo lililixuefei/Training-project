@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/DepartmentList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/training.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +220,7 @@
       <updated>1576727636762</updated>
       <workItem from="1576727644670" duration="2535000" />
       <workItem from="1576743421446" duration="2923000" />
-      <workItem from="1576764285211" duration="8495000" />
+      <workItem from="1576764285211" duration="8737000" />
     </task>
     <servers />
   </component>
