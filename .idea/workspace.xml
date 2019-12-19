@@ -9,27 +9,27 @@
     <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/DepartmentList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/PatientAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/PatientUpdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/RolesList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/RolesList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/TriageList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/TriageList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/UserList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-det.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/info-det.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-mgt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/info-mgt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/info-reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/training.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,12 +55,21 @@
     </option>
   </component>
   <component name="ProjectId" id="1VBXoCFpVg9wGbRFZPKzEW1fvST" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF" />
+      <recent name="D:\IdeaProjects\training_project\src\main\resources\spring" />
+      <recent name="D:\IdeaProjects\training_project\src\main\resources\properties" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\training_project\src\main\webapp" />
       <recent name="D:\IdeaProjects\training_project\src\main\webapp\pages" />
@@ -79,7 +88,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.941">
+    <configuration name="TrainTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="training_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuefei.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xuefei.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xuefei.test.TrainTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 7.0.941" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.941" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -186,6 +211,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrainTest.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -198,7 +228,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576727636762</updated>
       <workItem from="1576727644670" duration="2535000" />
-      <workItem from="1576743421446" duration="2199000" />
+      <workItem from="1576743421446" duration="2923000" />
+      <workItem from="1576764285211" duration="8495000" />
     </task>
     <servers />
   </component>
