@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/info-mgt.css" />
+		<link rel="stylesheet" href="css/WdatePicker.css" />
+		<title>分诊管理系统</title>
+		<style type="text/css">
+			table>tbody>tr {}
+			
+			input.confirm {
+				float: left;
+				width: 117px;
+				height: 39px;
+				background: url(images/login_btn.png);
+				color: #fff;
+				text-align: center;
+				font-size: 16px;
+				font-family: '微软雅黑';
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h2>患者管理</h2>
+		</div>
+		<div class="table-operate ue-clear">
+			<a href="javascript:;" class="del" style="width: 65px;">删除选中</a>
+			<a href="PatientAdd.html" class="add" style="width: 45px;">添加</a>
+			<form action="PatientList.html" method="post">
+				<div class="input-box ue-clear">
+					<label>模糊查询</label>
+					<input style="border: solid lightblue 0.5px; width: 200px;height: 28px;" type="text" placeholder="姓名|身份证|手机号" />
+					<input type="submit" value="搜索" style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(images/login_btn.png) no-repeat;background-size: 100px 30px" />
+				</div>
+			</form>
+		</div>
+		<div class="table-box">
+			<table>
+				<thead>
+					<tr align="center">
+						<th></th>
+						<th>患者姓名</th>
+						<th>性别</th>
+						<th>出生日期</th>
+						<th>身份证号</th>
+						<th>住址</th>
+						<th>联系电话</th>
+						<th class="operate">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr align="center">
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>123456789098654</td>
+						<td>河南郑州金水区南阳路博颂路</td>
+						<td>1555555345</td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/delico.png" width="10px" />删除</a>
+							<a href="PatientUpdate.html"><img src="images/edtico.png" width="10px" />修改</a>
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />挂号</a>
+						</td>
+					</tr>
+					<tr align="center">
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>123456789098654</td>
+						<td>河南郑州金水区南阳路博颂路</td>
+						<td>1555555345</td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/delico.png" width="10px" />删除</a>
+							<a href="PatientUpdate.html"><img src="images/edtico.png" width="10px" />修改</a>
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />挂号</a>
+						</td>
+					</tr>
+					<tr align="center">
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>123456789098654</td>
+						<td>河南郑州金水区南阳路博颂路</td>
+						<td>1555555345</td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/delico.png" width="10px" />删除</a>
+							<a href="PatientUpdate.html"><img src="images/edtico.png" width="10px" />修改</a>
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />挂号</a>
+						</td>
+					</tr>
+					<tr align="center">
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>123456789098654</td>
+						<td>河南郑州金水区南阳路博颂路</td>
+						<td>1555555345</td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/delico.png" width="10px" />删除</a>
+							<a href="PatientUpdate.html"><img src="images/edtico.png" width="10px" />修改</a>
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />挂号</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pagination ue-clear"></div>
+	</body>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/WdatePicker.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+	<script type="text/javascript">
+		$(".select-title").on("click", function() {
+			$(".select-list").hide();
+			$(this).siblings($(".select-list")).show();
+			return false;
+		})
+		$(".select-list").on("click", "li", function() {
+			var txt = $(this).text();
+			$(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
+		})
+
+		$('.pagination').pagination(100, {
+			callback: function(page) {
+				alert(page);
+			},
+			display_msg: true,
+			setPageNo: true
+		});
+
+		$("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+
+		showRemind('input[type=text], textarea', 'placeholder');
+	</script>
+
+</html>

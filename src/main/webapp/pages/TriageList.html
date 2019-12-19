@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/info-mgt.css" />
+		<link rel="stylesheet" href="css/WdatePicker.css" />
+		<title>分诊管理系统</title>
+		<style type="text/css">
+			table>tbody>tr {}
+			
+			input.confirm {
+				float: left;
+				width: 117px;
+				height: 39px;
+				background: url(images/login_btn.png);
+				color: #fff;
+				text-align: center;
+				font-size: 16px;
+				font-family: '微软雅黑';
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h2>分诊管理</h2></div>
+		<div class="table-operate ue-clear">
+			<form action="PatientList.html" method="post">
+				<div class="input-box ue-clear">
+					<label>查找诊断记录：</label>
+					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="status" id="status">
+						<option value="0">待诊断</option>
+						<option value="1">诊断结束</option>
+					</select>
+					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="isEmergency" id="">
+						<option value="0">非急诊</option>
+						<option value="1">急诊</option>
+					</select>
+					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="deptId" id="deptId">
+						<option value="100">骨科</option>
+						<option value="101">外科</option>
+						<option value="102">脑科</option>
+					</select>
+					<input type="text" name="keywords" id="keywords" placeholder="请输入患者姓名" style="border: solid lightblue 1px; width: 150px; height: 28px;"/>
+					<input type="submit" value="搜索" style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(images/login_btn.png) no-repeat;background-size: 100px 30px" />
+				</div>
+			</form>
+		</div>
+		<div class="table-box">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>患者姓名</th>
+						<th>性别</th>
+						<th>出生日期</th>
+						<th>急诊</th>
+						<th>科室</th>
+						<th>状态</th>
+						<th class="operate">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>是</td>
+						<td>骨科</td>
+						<td><img src="images/login_right.png" alt="" /></td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />叫号</a>
+							<a href="javascript:;"><img src="images/dico.png" width="10px" />完成诊断</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>是</td>
+						<td>骨科</td>
+						<td><img src="images/login_right.png" alt="" /></td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />叫号</a>
+							<a href="javascript:;"><img src="images/dico.png" width="10px" />完成诊断</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="ids" id="ids" /></td>
+						<td>徐双元</td>
+						<td>男</td>
+						<td>2018年7月31日</td>
+						<td>是</td>
+						<td>骨科</td>
+						<td><img src="images/login_right.png" alt="" /></td>
+						<td class="operate">
+							<a href="javascript:;"><img src="images/topuser.png" width="10px" />叫号</a>
+							<a href="javascript:;"><img src="images/dico.png" width="10px" />完成诊断</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pagination ue-clear"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/WdatePicker.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+	<script type="text/javascript">
+		$(".select-title").on("click", function() {
+			$(".select-list").hide();
+			$(this).siblings($(".select-list")).show();
+			return false;
+		})
+		$(".select-list").on("click", "li", function() {
+			var txt = $(this).text();
+			$(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
+		})
+
+		$('.pagination').pagination(100, {
+			callback: function(page) {
+				alert(page);
+			},
+			display_msg: true,
+			setPageNo: true
+		});
+
+		$("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+
+		showRemind('input[type=text], textarea', 'placeholder');
+	</script>
+
+</html>
