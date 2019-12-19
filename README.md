@@ -1,1 +1,5 @@
-"# Training-project" 
+#实训项目练习
+
+# 技术点
+    
+    - SSM框架
