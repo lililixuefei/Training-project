@@ -46,6 +46,7 @@
     <!--  MyBatis-Spring 中，可使用 SqlSessionFactoryBean来创建 SqlSessionFactory   -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
         <property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml"/>
     </bean>
 
