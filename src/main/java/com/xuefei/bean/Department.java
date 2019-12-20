@@ -1,5 +1,8 @@
 package com.xuefei.bean;
 
+/**
+ * 科室
+ */
 public class Department {
     private String id;
 
@@ -8,6 +11,16 @@ public class Department {
     private String telephone;
 
     private String area;
+
+    public Department() {
+    }
+
+    public Department(String id, String name, String telephone, String area) {
+        this.id = id;
+        this.name = name;
+        this.telephone = telephone;
+        this.area = area;
+    }
 
     public String getId() {
         return id;

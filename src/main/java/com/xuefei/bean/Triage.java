@@ -1,5 +1,8 @@
 package com.xuefei.bean;
 
+/**
+ * 分诊
+ */
 public class Triage {
     private String id;
 

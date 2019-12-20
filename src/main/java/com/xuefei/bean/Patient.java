@@ -2,6 +2,9 @@ package com.xuefei.bean;
 
 import java.util.Date;
 
+/**
+ * 患者
+ */
 public class Patient {
     private String id;
 

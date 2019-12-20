@@ -1,5 +1,8 @@
 package com.xuefei.bean;
 
+/**
+ * 用户
+ */
 public class User {
     private String id;
 

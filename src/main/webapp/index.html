@@ -40,13 +40,13 @@
 								</div>
 								<ul class="subnav">
 									<li>
-										<a href="javascript:;" date-src="pages/PatientList.html">患者管理</a>
+										<a href="#" id="patientList">患者管理</a>
 									</li>
 									<li>
-										<a href="javascript:;" date-src="pages/DepartmentList.html">科室管理</a>
+										<a href="/depart" date-src="/depart">科室管理</a>
 									</li>
 									<li>
-										<a href="javascript:;" date-src="pages/TriageList.html">分诊管理</a>
+										<a href="javascript:;" date-src="/triageList">分诊管理</a>
 									</li>
 								</ul>
 							</li>
@@ -56,7 +56,7 @@
 								</div>
 								<ul class="subnav">
 									<li>
-										<a href="javascript:;" date-src="pages/UserList.html">用户管理</a>
+											<a href="javascript:;" date-src="pages/UserList.html">用户管理</a>
 									</li>
 									<!--<li>
 										<a href="javascript:;" date-src="RolesList.html">角色管理</a>
@@ -112,5 +112,30 @@
 	<script type="text/javascript" src="static/js/core.js"></script>
 	<script type="text/javascript" src="static/js/jquery.dialog.js"></script>
 	<script type="text/javascript" src="static/js/index.js"></script>
-
+    <script>
+        $(function(){
+            $("#patientList").click(function(){
+                $.ajax({
+                    //发送请求URL
+                    url:"/patientList",
+                    //发送方式为GET
+                    type:"GET",
+                    //设置接收格式为JSON
+                    // dataType:"json",
+                    //编码设置
+                    contentType:"application/json;charset=utf-8",
+                    //向后台发送的数据
+                    // data:{
+                    //     isbn:$("#patientList").val(),
+                    // },
+                    //后台返回成功后处理数据，data为后台返回的json格式数据
+                    // success:function(data){
+                    // },
+                    //查询错误处理
+                    // error:function(){
+                    // }
+                });
+            });
+        });
+    </script>
 </html>

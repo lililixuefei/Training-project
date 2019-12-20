@@ -8,183 +8,27 @@
   <component name="ChangeListManager">
     <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/properties/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/test/TrainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/mybatis/sqlMapConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/properties/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-dao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-tx.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/jsp/hello.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/apiguardian-api-1.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/aspectjweaver-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/druid-1.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-jupiter-5.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-jupiter-api-5.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-jupiter-engine-5.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-jupiter-params-5.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-platform-commons-1.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/junit-platform-engine-1.6.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/opentest4j-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-aspects-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-jcl-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-tx-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-web-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/lib/spring-webmvc-5.1.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientAdd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientUpdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/RolesList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/TriageList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/UserList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/info-det.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/info-mgt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/info-reg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/pages/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/WdatePicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/info-mgt.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/info-reg.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/jquery.dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/addico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/bookico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/btnbg01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/btnbg02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/centerbottombg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/centerleft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/centerright.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/centertopbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/check-select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/close3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/close4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/countbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/date.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dateico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/delico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dialog_btnbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dialogbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dialogbtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/downcenter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/downleft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/dright.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/edtico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/foot01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/foot02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/footbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/formbtnbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/formbtnbg01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/ico07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/icon09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/inputbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/lefthoverbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftjt01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftjt02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftjt03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/leftjt04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/lefttop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/lefttopbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/listico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_pro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_pro1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/login_yzm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/righttitlebig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/righttop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/rmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/rmail1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/selectxl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/tabbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/tablelistbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/titlebg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/titlebg01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/titleico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/tjico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/toolbarbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/topbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/topcenter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/toplight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/topline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/topmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/topuser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/images/x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/WdatePicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/jquery-1.10.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/jquery.dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/jquery.pagination.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/lang/zh-tw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/WdatePicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/datePicker.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/default/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/default/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/whyGreen/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/whyGreen/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/skin/whyGreen/img.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Triage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Triage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/test/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/test/MapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Triage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Triage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/test/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/test/MapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,20 +74,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM_CRUD-master" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\pages" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF" />
       <recent name="D:\IdeaProjects\training_project\src\main\resources\spring" />
       <recent name="D:\IdeaProjects\training_project\src\main\resources\properties" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\training_project\src\main\webapp" />
-      <recent name="D:\IdeaProjects\training_project\src\main\webapp\pages" />
-      <recent name="D:\IdeaProjects\training_project\src\main\webapp\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,9 +102,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapperTest.testCRUD">
+  <component name="RunManager" selected="Application.TestLog4j2">
     <configuration name="MBGTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuefei.test.MBGTest" />
+      <module name="training_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuefei.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog4j2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuefei.test.TestLog4j2" />
       <module name="training_project" />
       <extension name="coverage">
         <pattern>
@@ -412,6 +269,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestLog4j2" />
         <item itemvalue="JUnit.MapperTest.testCRUD" />
         <item itemvalue="Application.MBGTest" />
         <item itemvalue="JUnit.TrainTest.test" />
@@ -431,7 +289,8 @@
       <workItem from="1576727644670" duration="2535000" />
       <workItem from="1576743421446" duration="2923000" />
       <workItem from="1576764285211" duration="8929000" />
-      <workItem from="1576814962858" duration="5112000" />
+      <workItem from="1576814962858" duration="5522000" />
+      <workItem from="1576824077193" duration="8961000" />
     </task>
     <servers />
   </component>

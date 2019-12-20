@@ -13,9 +13,10 @@
     <!--加载注解驱动-->
     <mvc:annotation-driven/>
     <!-- 配置视图解析器 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
+    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/pages/"/>
+        <property name="suffix" value=".html"/>
+        <property name="contentType" value="text/html"/>
     </bean>
-
+    <mvc:default-servlet-handler />
 </beans>
