@@ -8,27 +8,56 @@
   <component name="ChangeListManager">
     <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Triage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Triage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/test/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/test/MapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-tx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-tx.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hello.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Triage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Triage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/DepartmentList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientUpdate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/RolesList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/RolesList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/TriageList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/TriageList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/UserList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-det.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/info-det.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-mgt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/info-mgt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/info-reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/info-reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/test/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/test/MapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-tx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-tx.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/training.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/log/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/log/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-tx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/applicationContext-tx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/DepartmentList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientAdd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/PatientUpdate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/RolesList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/TriageList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/UserList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/info-det.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/info-mgt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/info-reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/pages/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/static/css/login.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +70,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,21 +104,23 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM_CRUD-master" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\templates\pages" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\templates" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\templates" />
+      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\jsp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\training_project\src\main\webapp" />
       <recent name="D:\IdeaProjects\training_project\src\main\webapp\pages" />
       <recent name="D:\IdeaProjects\training_project\src\main\webapp\static" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\IdeaProjects\training_project\src\main\webapp\WEB-INF" />
-      <recent name="D:\IdeaProjects\training_project\src\main\resources\spring" />
-      <recent name="D:\IdeaProjects\training_project\src\main\resources\properties" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestLog4j2">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.941">
     <configuration name="MBGTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuefei.test.MBGTest" />
       <module name="training_project" />
@@ -290,7 +323,8 @@
       <workItem from="1576743421446" duration="2923000" />
       <workItem from="1576764285211" duration="8929000" />
       <workItem from="1576814962858" duration="5522000" />
-      <workItem from="1576824077193" duration="8961000" />
+      <workItem from="1576824077193" duration="9915000" />
+      <workItem from="1576853132433" duration="13074000" />
     </task>
     <servers />
   </component>

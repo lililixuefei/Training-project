@@ -1,6 +1,6 @@
 html{*overflow:auto;}
 body{ font-family:'微软雅黑';background: #2074bb;}
-#container{ position:relative; background:url(../images/login_light.png) no-repeat center center;}
+#container{ position:relative; margin-top:100px; background:url(../images/login_light.png) no-repeat center center;}
 
 #bd{}
 .login{ margin:0 auto; padding-top:15px; width:640px; height:405px; background:url(../images/login_pro.png);}

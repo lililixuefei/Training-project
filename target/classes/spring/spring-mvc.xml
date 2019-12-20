@@ -9,14 +9,30 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
     <!--配置报扫描器，扫描@Controller注解的类-->
-    <context:component-scan base-package="com.xuefei.controller"/>
+    <context:component-scan base-package="com.xuefei.controller"></context:component-scan>
     <!--加载注解驱动-->
     <mvc:annotation-driven/>
+    <!--拦截器-->
+
     <!-- 配置视图解析器 -->
-    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/pages/"/>
-        <property name="suffix" value=".html"/>
-        <property name="contentType" value="text/html"/>
-    </bean>
     <mvc:default-servlet-handler />
+    <bean id="templateResolver"
+          class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="WEB-INF/templates/pages/"/>
+        <property name="suffix" value=".html"/>
+        <property name="characterEncoding" value="UTF-8"/>
+        <property name="order" value="1"/>
+        <property name="templateMode" value="HTML5"/>
+        <property name="cacheable" value="false"/>
+    </bean>
+
+    <bean id="templateEngine"
+          class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
 </beans>

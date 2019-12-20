@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../static/css/base.css" />
+<link rel="stylesheet" href="../../../static/css/info-reg.css" />
+<script src="../../../static/js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+<title>修改患者信息</title>
+</head>
+
+<body>
+<div class="title"><h2>修改患者信息</h2></div>
+<div class="main">
+    <form id='updateForm' action="http://www.baidu.com" method="post">
+	<p class="short-input ue-clear">
+    	<label>姓名：</label>
+        <input type="text" name="name" value="徐双元" id="name"/>
+    </p>
+    <div class="short-input select ue-clear">
+    	<label>性别：</label>
+        <div class="select-wrap">
+        	<input type="radio" name="sex" checked="true" value="1" id="sex" />男
+        	<input type="radio" name="sex" value="0" id="sex" />女
+        	<input type="radio" name="sex" value="2" id="sex" />其他
+        </div>
+    </div>
+    <p class="short-input ue-clear">
+    	<label>出生日期：</label>
+        <input type="text" name="birth" value="1999-9-9" id='birth' placeholder="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
+    	<span><em>*</em>请输入正确的时间格式</span>
+    </p>
+    <p class="short-input ue-clear">
+    	<label>身份证号：</label>
+        <input type="text" name="idcard" value="12345678908764" id='idcard'/>
+    </p>
+    <p class="short-input ue-clear">
+    	<label>住址：</label>
+        <input type="text" name="address" value="河南郑州" id='address'/>
+    </p>
+    <p class="long-input ue-clear">
+    	<label>电话：</label>
+        <input type="text" name="mobile" value="1555553452" id="mobile" placeholder="" />
+    </p>
+
+    <p class="short-input ue-clear">
+    	<label>症状描述</label>
+        <textarea name='info' id='info' placeholder="请输入该患者的信息"></textarea>
+    </p>
+    </form>
+</div>
+<div class="btn ue-clear">
+	<a href="javascript:;" class="confirm" onclick="return updateForm()">确定</a>
+</div>
+</body>
+<script type="text/javascript" src="../../../static/js/jquery.js"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+<script type="text/javascript">
+/**
+ * 提交表单
+ */
+function updateForm(){
+	console.log("-----")
+	$('#updateForm').submit();
+}
+
+$(".select-title").on("click",function(){
+	$(".select-list").toggle();
+	return false;
+});
+$(".select-list").on("click","li",function(){
+	var txt = $(this).text();
+	$(".select-title").find("span").text(txt);
+});
+
+
+showRemind('input[type=text], textarea','placeholder');
+</script>
+</html>
