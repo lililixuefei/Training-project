@@ -59,8 +59,6 @@ public class PatientController {
         //用PageInfo对结果进行包装
         //PageInfo包含了非常全面的分页属性
         PageInfo page = new PageInfo(allPatients,5);
-
-        model.addAttribute("allPatients", allPatients);
         model.addAttribute("pageInfo",page);
         return "PatientList";
     }
@@ -83,17 +81,17 @@ public class PatientController {
                 del_ids.add(str_id);
             }
             int i = patientService.deleteBatch(del_ids);
-            if (i == 1) {
+            if (i != 0) {
                 attributes.addFlashAttribute("message", "批量删除成功");
             } else {
-                attributes.addFlashAttribute("message", "批量操作成功");
+                attributes.addFlashAttribute("message", "删除失败");
             }
         } else {
             int i = patientService.deletePatient(id);
             if (i == 1) {
                 attributes.addFlashAttribute("message", "删除成功");
             } else {
-                attributes.addFlashAttribute("message", "操作成功");
+                attributes.addFlashAttribute("message", "删除失败");
             }
         }
         return "redirect:/patientList";

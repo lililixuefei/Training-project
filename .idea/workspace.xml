@@ -7,52 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/bean/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/config/TrainConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/interceptor/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PatientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PatientMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/DepartmentList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientUpdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/UserList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/WdatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/WdatePicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/bean/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/config/TrainConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/admin/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/admin/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/interceptor/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PatientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PatientMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/training.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/bean/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/bean/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/config/TrainConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/admin/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/admin/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/interceptor/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/mapper/PatientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/mapper/PatientMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/mybatis/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/DepartmentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/DepartmentList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientUpdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/UserList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/UserList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/static/js/jquery.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -325,7 +296,7 @@
       <workItem from="1576814962858" duration="5522000" />
       <workItem from="1576824077193" duration="9915000" />
       <workItem from="1576853132433" duration="15382000" />
-      <workItem from="1576900231586" duration="30496000" />
+      <workItem from="1576900231586" duration="40269000" />
     </task>
     <servers />
   </component>
