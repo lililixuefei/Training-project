@@ -72,6 +72,9 @@
   <sql id="Base_Column_List">
     id, name, sex, birthday, idcard, address, mobile, description
   </sql>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from t_patient
+  </select>
   <select id="selectByExample" parameterType="com.xuefei.bean.PatientExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

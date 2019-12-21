@@ -84,5 +84,34 @@ public class Patient {
 
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
+
+    }
+
+    public Patient() {
+    }
+
+    public Patient(String id, String name, Integer sex, Date birthday, String idcard, String address, String mobile, String description) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.birthday = birthday;
+        this.idcard = idcard;
+        this.address = address;
+        this.mobile = mobile;
+        this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", birthday=" + birthday +
+                ", idcard='" + idcard + '\'' +
+                ", address='" + address + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

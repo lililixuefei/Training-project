@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../../static/css/base.css" />
@@ -11,7 +11,7 @@
 <body>
 <div class="title"><h2>添加患者</h2></div>
 <div class="main">
-    <form id='addForm' action="http://www.baidu.com" method="post">
+    <form id='addForm' action="#" th:action="@{/addPatient}" method="post">
 	<p class="short-input ue-clear">
     	<label>姓名：</label>
         <input type="text" name="name" id="name"/>
@@ -24,11 +24,11 @@
         	<input type="radio" name="sex" value="2" id="sex" />其他
         </div>
     </div>
-    <p class="short-input ue-clear">
-    	<label>出生日期：</label>
-        <input type="text" name="birth" id='birth' placeholder="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
-    	<span><em>*</em>请输入正确的时间格式</span>
-    </p>
+<!--    <p class="short-input ue-clear">-->
+<!--    	<label>出生日期：</label>-->
+<!--        <input type="text" name="birthday"  placeholder="" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" />-->
+<!--    	<span><em>*</em>请输入正确的时间格式</span>-->
+<!--    </p>-->
     <p class="short-input ue-clear">
     	<label>身份证号：</label>
         <input type="text" name="idcard" id='idcard'/>
@@ -44,7 +44,7 @@
 
     <p class="short-input ue-clear">
     	<label>症状描述</label>
-        <textarea name='info' id='info' placeholder="请输入该患者的信息"></textarea>
+        <textarea name='description' placeholder="请输入该患者的信息"></textarea>
     </p>
     </form>
 </div>
@@ -53,8 +53,8 @@
 </div>
 </body>
 <script type="text/javascript" src="../../../static/js/jquery.js"></script>
-<script type="text/javascript" src="../../../static/js/common.js"></script>
-<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+<!--<script type="text/javascript" src="../../../static/js/common.js"></script>-->
+<!--<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>-->
 <script type="text/javascript">
 /**
  * 提交表单

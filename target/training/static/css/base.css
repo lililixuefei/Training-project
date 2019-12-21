@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 a {text-decoration:none;cursor:pointer;}
 dl, dt, dd, ol, ul, li{ list-style:none;}
 
+#hidden_id{
+	display: none;
+}
 /*some common class*/
 .left{float:left;}
 .right{float:right;}

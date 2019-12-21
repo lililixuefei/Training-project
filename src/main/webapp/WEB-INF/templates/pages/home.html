@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../../static/css/base.css" />
@@ -52,7 +52,7 @@
                 <p><a href="javascript:;">系统配置</a></p>
             </li>
             <li class="add-btn">
-            	<img src="images/add.png" />
+            	<img src="images/add.png" th:src="@{/static/images/add.png}"/>
             </li>
     	</ul>
         
