@@ -10,6 +10,10 @@ public interface PatientService {
 
     public List<Patient> findAllPatients();
 
+    public List<Patient> findPatientByName(String name);
+
+    public List<Patient> findPatientByMobile(String mobile);
+
     public int savePatient(Patient patient);
 
     public int deletePatient(String id);
@@ -17,4 +21,6 @@ public interface PatientService {
     public int updatePatient(Patient patient);
 
     public int deleteBatch(List<String> ids);
+
+    List<Patient> findPatientByNumber(String fuzzy);
 }

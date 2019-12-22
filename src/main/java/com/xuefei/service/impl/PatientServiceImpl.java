@@ -29,6 +29,30 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
+    public List<Patient> findPatientByName(String name) {
+        PatientExample patientExample = new PatientExample();
+        patientExample.createCriteria().andNameLike("%"+name+"%");
+        List<Patient> patients = patientMapper.selectByExample(patientExample);
+        return patients;
+    }
+
+    @Override
+    public List<Patient> findPatientByMobile(String mobile) {
+        PatientExample patientExample = new PatientExample();
+        patientExample.createCriteria().andMobileLike("%"+mobile+"%");
+        List<Patient> patients = patientMapper.selectByExample(patientExample);
+        return patients;
+    }
+
+    @Override
+    public List<Patient> findPatientByNumber(String fuzzy) {
+        PatientExample patientExample = new PatientExample();
+        patientExample.createCriteria().andIdcardLike("%"+fuzzy+"%");
+        List<Patient> patients = patientMapper.selectByExample(patientExample);
+        return patients;
+    }
+
+    @Override
     public int savePatient(Patient patient) {
         int insert = patientMapper.insert(patient);
         return insert;
@@ -53,4 +77,6 @@ public class PatientServiceImpl implements PatientService {
         int i = patientMapper.deleteByExample(patientExample);
         return i;
     }
+
+
 }

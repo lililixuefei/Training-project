@@ -58,8 +58,26 @@ public class PatientController {
         List<Patient> allPatients = patientService.findAllPatients();
         //用PageInfo对结果进行包装
         //PageInfo包含了非常全面的分页属性
-        PageInfo page = new PageInfo(allPatients,5);
-        model.addAttribute("pageInfo",page);
+        PageInfo page = new PageInfo(allPatients, 3);
+        model.addAttribute("pageInfo", page);
+        return "PatientList";
+    }
+
+    @PostMapping("/fuzzyQuery")
+    public String fuzzyQuery(@RequestParam(value = "pn", defaultValue = "1")
+                                     Integer number, @RequestParam("fuzzy") String fuzzy, Model model) {
+        //第几页开始查，每页几条
+        PageHelper.startPage(number, 100);
+        List<Patient> patients = null;
+        patients = patientService.findPatientByName(fuzzy);
+        if (patients.size() == 0) {
+            patients = patientService.findPatientByMobile(fuzzy);
+            if (patients.size() == 0) {
+                patients = patientService.findPatientByNumber(fuzzy);
+            }
+        }
+        PageInfo page = new PageInfo(patients, 3);
+        model.addAttribute("pageInfo", page);
         return "PatientList";
     }
 
@@ -101,7 +119,7 @@ public class PatientController {
      * 去添加页面，信息回显
      *
      * @param id
-     * @param attributes
+     * @param model
      * @return
      */
     @GetMapping("/patientUpdate/{id}")

@@ -30,10 +30,10 @@
 <div class="table-operate ue-clear">
     <a href="#" id="delete_all" class="del" style="width: 65px;">删除选中</a>
     <a href="PatientAdd.html" th:href="@{/patientAdd}" class="add" style="width: 45px;">添加</a>
-    <form action="PatientList.html" method="post">
+    <form action="#" th:action="@{/fuzzyQuery}" method="post">
         <div class="input-box ue-clear">
             <label>模糊查询</label>
-            <input style="border: solid lightblue 0.5px; width: 200px;height: 28px;" type="text"
+            <input name="fuzzy" style="border: solid lightblue 0.5px; width: 200px;height: 28px;" type="text"
                    placeholder="姓名|身份证|手机号"/>
             <input type="submit" value="搜索"
                    style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(../../../static/images/login_btn.png) no-repeat;background-size: 100px 30px"/>
@@ -90,22 +90,32 @@
         总共<span th:text="${pageInfo.total}"></span>条记录
     </div>
     <!-- 分页条信息   -->
-    <div class=".col-md-6" style="margin-left: 300px">
+    <div class=".col-md-6" style="margin-left: 700px">
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <li><a href="">首页</a></li>
                 <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
+                    <a href="#" th:href="@{'/patientList?pn=' + 1}">首页</a>
                 </li>
-                  <li><a href="#" th:text="${pageNum}">1</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-                <li><a href="">末页</a></li>
+                <th:block th:if="${pageInfo.hasPreviousPage}">
+                    <li>
+                        <a href="#" th:href="@{'/patientList?pn='+${pageInfo.prePage}}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </th:block>
+                <th:block th:each="pageNum : ${pageInfo.navigatepageNums}">
+                    <li th:class="${pageNum == pageInfo.pageNum} ? 'active' : '' ">
+                        <a href="#" th:href="@{'/patientList?pn='+${pageNum}}" th:text="${pageNum}">1</a>
+                    </li>
+                </th:block>
+                <th:block th:if="${pageInfo.hasNextPage}">
+                    <li>
+                        <a href="#" th:href="@{'/patientList?pn='+${pageInfo.nextPage}}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </th:block>
+                <li><a href="#"  th:href="@{'/patientList?pn=' + ${pageInfo.pages}}">末页</a></li>
             </ul>
         </nav>
     </div>
@@ -113,7 +123,6 @@
 </body>
 
 <script type="text/javascript" src="../../../static/js/jquery.js" th:src="@{/static/js/jquery.js}"></script>
-
 <script type="text/javascript" src="../../../static/js/common.js" th:src="@{/static/js/common.js}"></script>
 <script type="text/javascript" src="../../../static/js/WdatePicker.js" th:src="@{/static/js/WdatePicker.js}"></script>
 <script type="text/javascript" src="../../../static/js/bootstrap.min.js"
