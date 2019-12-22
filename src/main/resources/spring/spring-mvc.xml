@@ -12,12 +12,19 @@
     <context:component-scan base-package="com.xuefei.controller"></context:component-scan>
     <!--加载注解驱动-->
     <mvc:annotation-driven/>
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <list>
+                <bean class="com.xuefei.util.CustomDateConverter"/>
+            </list>
+        </property>
+    </bean>
 
     <mvc:default-servlet-handler></mvc:default-servlet-handler>
     <!-- 对指定目录下的静态资源放行 -->
-<!--    <mvc:resources location="/static/images/" mapping="/static/images/**"/>-->
-<!--    <mvc:resources location="/static/css/" mapping="/static/css/**"/>-->
-<!--    <mvc:resources location="/static/js/" mapping="/static/js/**"/>-->
+    <!--    <mvc:resources location="/static/images/" mapping="/static/images/**"/>-->
+    <!--    <mvc:resources location="/static/css/" mapping="/static/css/**"/>-->
+    <!--    <mvc:resources location="/static/js/" mapping="/static/js/**"/>-->
     <!--拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>

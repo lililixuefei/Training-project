@@ -94,7 +94,6 @@
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <li>
-                    <a href="#" th:href="@{'/patientList?pn=' + 1}">首页</a>
                 </li>
                 <th:block th:if="${pageInfo.hasPreviousPage}">
                     <li>
@@ -113,7 +112,8 @@
                         <a href="#" th:href="@{'/patientList?pn='+${pageInfo.nextPage}}" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
-                    </li>
+                    </li>    <a href="#" th:href="@{'/patientList?pn=' + 1}">首页</a>
+
                 </th:block>
                 <li><a href="#"  th:href="@{'/patientList?pn=' + ${pageInfo.pages}}">末页</a></li>
             </ul>

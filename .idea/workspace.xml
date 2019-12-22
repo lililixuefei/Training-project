@@ -7,18 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e1c7e64-4a21-464d-8eb6-0a002faa022b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/controller/patient/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuefei/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xuefei/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientAdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/service/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/service/PatientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xuefei/service/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xuefei/service/impl/PatientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/pages/PatientUpdate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/training.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/training.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/controller/patient/PatientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/service/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/service/PatientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/service/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/com/xuefei/service/impl/PatientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientAdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/training/WEB-INF/templates/pages/PatientUpdate.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +29,8 @@
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -292,7 +289,7 @@
       <workItem from="1576824077193" duration="9915000" />
       <workItem from="1576853132433" duration="15382000" />
       <workItem from="1576900231586" duration="40484000" />
-      <workItem from="1576990721561" duration="10824000" />
+      <workItem from="1576990721561" duration="14232000" />
     </task>
     <servers />
   </component>
