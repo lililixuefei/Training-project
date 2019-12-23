@@ -63,6 +63,13 @@ public class PatientController {
         return "PatientList";
     }
 
+    /**
+     * 模糊查询
+     * @param number
+     * @param fuzzy
+     * @param model
+     * @return
+     */
     @PostMapping("/fuzzyQuery")
     public String fuzzyQuery(@RequestParam(value = "pn", defaultValue = "1")
                                      Integer number, @RequestParam("fuzzy") String fuzzy, Model model) {

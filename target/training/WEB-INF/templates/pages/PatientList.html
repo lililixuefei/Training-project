@@ -65,7 +65,15 @@
             </td>
             <td th:text="${patient.getId()}" id="hidden_id" style="display: none"></td>
             <td th:text="${patient.getName()}">徐双元</td>
-            <td th:text="${patient.getSex()==1}? '男' : '女'">其它</td>
+            <th:block th:if="${patient.getSex()==1}">
+                <td>男</td>
+            </th:block>
+            <th:block th:if="${patient.getSex()==0}">
+                <td>女</td>
+            </th:block>
+            <th:block th:if="${patient.getSex()==2}">
+                <td>其他</td>
+            </th:block>
             <td th:text="${#dates.format(patient.getBirthday(),'yyyy-MM-dd')}">2018年7月31日</td>
             <td th:text="${patient.getIdcard()}">123456789098654</td>
             <td th:text="${patient.getAddress()}"></td>
@@ -91,7 +99,7 @@
     </div>
     <!-- 分页条信息   -->
     <div class=".col-md-6" style="margin-left: 700px">
-        <nav aria-label="Page navigation">
+        <nav aria-label="Page navigation" th:if="${pageInfo.pages != 1}">
             <ul class="pagination">
                 <li>
                     <a href="#" th:href="@{'/patientList?pn=' + 1}">首页</a>
@@ -114,6 +122,7 @@
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
+
                 </th:block>
                 <li><a href="#"  th:href="@{'/patientList?pn=' + ${pageInfo.pages}}">末页</a></li>
             </ul>
@@ -128,6 +137,7 @@
 <script type="text/javascript" src="../../../static/js/bootstrap.min.js"
         th:src="@{/static/js/bootstrap.min.js}"></script>
 <script type="text/javascript">
+
 
     //全选 全不选
     $("#check_all").click(function () {
@@ -153,10 +163,12 @@
         });
         id = id.substring(0, id.length - 1);
         if (confirm("确认删除吗？")) {
-            $.ajax({
-                url: "/deletePatient/" + id,
-                type: "GET"
-            });
+            $("#delete_all").attr("href","/deletePatient/" + id);
+            // $.ajax({
+            //     url: "/deletePatient/" + id,
+            //     type: "GET"
+            // });
+
         }
     });
 

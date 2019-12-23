@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../../static/css/base.css" />
 <link rel="stylesheet" href="../../../static/css/info-reg.css" />
-<script src="../../../static/js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="../../../static/css/layui.css" th:href="@{/static/css/layui.css}">
 <title>添加患者</title>
 </head>
 
@@ -26,7 +26,7 @@
     </div>
     <p class="short-input ue-clear">
     	<label>出生日期：</label>
-        <input type="text" name="birthday"  placeholder="xxxx/xx/xx" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
+        <input type="text" name="birthday" id="test1" class="layui-input"  placeholder="xxxx/xx/xx" onfocus="WdatePicker({dateFmt:'yyyy/MM/dd'})"/>
     	<span><em>*</em>请输入正确的时间格式</span>
     </p>
     <p class="short-input ue-clear">
@@ -53,8 +53,9 @@
 </div>
 </body>
 <script type="text/javascript" src="../../../static/js/jquery.js" th:src="@{/static/js/jquery.js}"></script>
-<!--<script type="text/javascript" src="../../../static/js/common.js"></script>-->
-<!--<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>-->
+<script type="text/javascript" src="../../../static/js/layui.js" th:src="@{/static/js/layui.js}"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
 <script type="text/javascript">
 /**
  * 提交表单
@@ -72,7 +73,15 @@ $(".select-list").on("click","li",function(){
 	var txt = $(this).text();
 	$(".select-title").find("span").text(txt);
 });
+layui.use('laydate', function(){
+    var laydate = layui.laydate;
 
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#test1', //指定元素
+        format: 'yyyy/MM/dd'
+    });
+});
 
 showRemind('input[type=text], textarea','placeholder');
 </script>

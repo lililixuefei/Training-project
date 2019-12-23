@@ -1,6 +1,7 @@
 package com.xuefei.controller.admin;
 
 import com.xuefei.bean.User;
+import com.xuefei.exception.PageNotFoundException;
 import com.xuefei.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,12 +36,16 @@ public class LoginController {
         }else {
             attributes.addFlashAttribute("message", "用户名或秘密错误！！！");
             return "redirect:/";
+            //测试异常处理
+//            throw  new PageNotFoundException("输入有误！");
         }
     }
 
     @GetMapping("/logout")
     public String logout(HttpSession session){
-        session.removeAttribute("user");
+        //直接清除session
+        session.invalidate();
+//        session.removeAttribute("user");
         return "redirect:/";
     }
 }
