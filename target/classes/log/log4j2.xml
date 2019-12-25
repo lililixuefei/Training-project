@@ -8,7 +8,7 @@
         <property name="APPNAME">park-service</property>
         <!-- （各应用需要修改）日志文件本地存放目录路径 建议各个环境跟生产环境统一起来,方便维护 -->
         <!--sys:catalina.home  tomcat的根目录-->
-        <Property name="logBaseFolder">/logs/zcrTest/</Property>
+        <Property name="logBaseFolder">${sys:catalina.home}/logs/zcrTest/</Property>
         <!-- *必须并强制遵守 日志文件的编码 -->
         <property name="log_charset">UTF-8</property>
         <!--输出日志格式-->

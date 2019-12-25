@@ -1,0 +1,63 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../static/css/base.css"/>
+    <link rel="stylesheet" href="../../../static/css/info-reg.css"/>
+    <script src="../../../static/js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+    <title>修改患者信息</title>
+</head>
+
+<body>
+<div class="title"><h2>修改患者信息</h2></div>
+<div class="main">
+    <form id='updateForm' th:action="@{/updateDepartment}" method="post">
+
+        <p class="short-input ue-clear">
+            <label>科室编号：</label>
+            <input type="text" name="id" th:value="${department.getId()}" id="name"/>
+        </p>
+        <p class="short-input ue-clear">
+            <label>科室名称：</label>
+            <input type="text" name="name" th:value="${department.getName()}" id="name"/>
+        </p>
+        <p class="short-input ue-clear">
+            <label>所在区域：</label>
+            <input type="text" name="area" th:value="${department.getArea()}" id='address'/>
+        </p>
+        <p class="long-input ue-clear">
+            <label>电话：</label>
+            <input type="text" name="telephone" th:value="${department.getTelephone()}" id="mobile" placeholder=""/>
+        </p>
+    </form>
+</div>
+<div class="btn ue-clear">
+    <a href="javascript:;" class="confirm" onclick="return updateForm()">确定</a>
+</div>
+</body>
+<script type="text/javascript" src="../../../static/js/jquery.js"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    /**
+     * 提交表单
+     */
+    function updateForm() {
+        console.log("-----")
+        $('#updateForm').submit();
+    }
+
+    $(".select-title").on("click", function () {
+        $(".select-list").toggle();
+        return false;
+    });
+    $(".select-list").on("click", "li", function () {
+        var txt = $(this).text();
+        $(".select-title").find("span").text(txt);
+    });
+
+
+    showRemind('input[type=text], textarea', 'placeholder');
+</script>
+</html>

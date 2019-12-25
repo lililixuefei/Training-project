@@ -53,4 +53,14 @@ public class Department {
     public void setArea(String area) {
         this.area = area == null ? null : area.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", area='" + area + '\'' +
+                '}';
+    }
 }

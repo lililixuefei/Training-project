@@ -23,7 +23,6 @@
         </property>
     </bean>
 
-    <mvc:default-servlet-handler></mvc:default-servlet-handler>
     <!-- 对指定目录下的静态资源放行 -->
     <!--    <mvc:resources location="/static/images/" mapping="/static/images/**"/>-->
     <!--    <mvc:resources location="/static/css/" mapping="/static/css/**"/>-->

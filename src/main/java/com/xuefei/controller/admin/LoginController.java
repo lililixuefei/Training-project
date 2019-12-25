@@ -1,7 +1,6 @@
 package com.xuefei.controller.admin;
 
 import com.xuefei.bean.User;
-import com.xuefei.exception.PageNotFoundException;
 import com.xuefei.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,137 +1,164 @@
 <!doctype html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="../../../static/css/base.css" />
-		<link rel="stylesheet" href="../../../static/css/info-mgt.css" />
-		<link rel="stylesheet" href="../../../static/css/WdatePicker.css" />
-		<title>分诊管理系统</title>
-		<style type="text/css">
-			table>tbody>tr {}
-			
-			input.confirm {
-				float: left;
-				width: 117px;
-				height: 39px;
-				background: url(../../../static/images/login_btn.png);
-				color: #fff;
-				text-align: center;
-				font-size: 16px;
-				font-family: '微软雅黑';
-			}
-		</style>
-	</head>
-	<body>
-		<div class="title">
-			<h2>分诊管理</h2></div>
-		<div class="table-operate ue-clear">
-			<form action="PatientList.html" method="post">
-				<div class="input-box ue-clear">
-					<label>查找诊断记录：</label>
-					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="status" id="status">
-						<option value="0">待诊断</option>
-						<option value="1">诊断结束</option>
-					</select>
-					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="isEmergency" id="">
-						<option value="0">非急诊</option>
-						<option value="1">急诊</option>
-					</select>
-					<select style="border: solid lightblue 1px; width: 100px; height: 28px;" name="deptId" id="deptId">
-						<option value="100">骨科</option>
-						<option value="101">外科</option>
-						<option value="102">脑科</option>
-					</select>
-					<input type="text" name="keywords" id="keywords" placeholder="请输入患者姓名" style="border: solid lightblue 1px; width: 150px; height: 28px;"/>
-					<input type="submit" value="搜索" style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(images/login_btn.png) no-repeat;background-size: 100px 30px" />
-				</div>
-			</form>
-		</div>
-		<div class="table-box">
-			<table>
-				<thead>
-					<tr>
-						<th></th>
-						<th>患者姓名</th>
-						<th>性别</th>
-						<th>出生日期</th>
-						<th>急诊</th>
-						<th>科室</th>
-						<th>状态</th>
-						<th class="operate">操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>徐双元</td>
-						<td>男</td>
-						<td>2018年7月31日</td>
-						<td>是</td>
-						<td>骨科</td>
-						<td><img src="images/login_right.png" alt="" /></td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/topuser.png" width="10px" />叫号</a>
-							<a href="javascript:;"><img src="../../../static/images/dico.png" width="10px" />完成诊断</a>
-						</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>徐双元</td>
-						<td>男</td>
-						<td>2018年7月31日</td>
-						<td>是</td>
-						<td>骨科</td>
-						<td><img src="images/login_right.png" alt="" /></td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/topuser.png" width="10px" />叫号</a>
-							<a href="javascript:;"><img src="../../../static/images/dico.png" width="10px" />完成诊断</a>
-						</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>徐双元</td>
-						<td>男</td>
-						<td>2018年7月31日</td>
-						<td>是</td>
-						<td>骨科</td>
-						<td><img src="images/login_right.png" alt="" /></td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/topuser.png" width="10px" />叫号</a>
-							<a href="javascript:;"><img src="../../../static/images/dico.png" width="10px" />完成诊断</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="pagination ue-clear"></div>
-	</body>
-	<script type="text/javascript" src="../../../static/js/jquery.js"></script>
-	<script type="text/javascript" src="../../../static/js/common.js"></script>
-	<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
-	<script type="text/javascript" src="../../../static/js/jquery.pagination.js"></script>
-	<script type="text/javascript">
-		$(".select-title").on("click", function() {
-			$(".select-list").hide();
-			$(this).siblings($(".select-list")).show();
-			return false;
-		})
-		$(".select-list").on("click", "li", function() {
-			var txt = $(this).text();
-			$(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
-		})
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../static/css/base.css"/>
+    <link rel="stylesheet" href="../../../static/css/info-mgt.css"/>
+    <link rel="stylesheet" href="../../../static/css/WdatePicker.css"/>
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/static/css/bootstrap.min.css}"/>
+    <title>分诊管理系统</title>
+    <style type="text/css">
+        table > tbody > tr {
+        }
 
-		$('.pagination').pagination(100, {
-			callback: function(page) {
-				alert(page);
-			},
-			display_msg: true,
-			setPageNo: true
-		});
+        input.confirm {
+            float: left;
+            width: 117px;
+            height: 39px;
+            background: url(../../../static/images/login_btn.png);
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <h2>分诊管理</h2></div>
+<div class="table-box">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="check_all">
+            </th>
+            <th>患者姓名</th>
+			<th>性别</th>
+            <th>出生日期</th>
+            <th>是</th>
+            <th>状态</th>
+            <th class="operate">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="triagePatient : ${pageInfo.list}">
+            <td><input type="checkbox" name="ids" id="ids"/></td>
+            <td th:text="${triagePatient.getName()}">徐双元</td>
+            <th:block th:if="${triagePatient.getSex()==1}">
+                <td>男</td>
+            </th:block>
+            <th:block th:if="${triagePatient.getSex()==0}">
+                <td>女</td>
+            </th:block>
+            <th:block th:if="${triagePatient.getSex()==2}">
+                <td>其他</td>
+            </th:block>
+            <td  th:text="${#dates.format(triagePatient.getBirthday(),'yyyy-MM-dd')}">2018年7月31日</td>
+            <td  th:text="${triagePatient.getIsemergency() == 1} ? 是 : 不是">是</td>
+            <td  th:href="${triagePatient.getStatus()}"><img src="images/login_right.png" alt=""/></td>
+            <td class="operate">
+                <a href="javascript:;"><img src="../../../static/images/topuser.png" width="10px"/>叫号</a>
+                <a href="javascript:;"><img src="../../../static/images/dico.png" width="10px"/>完成诊断</a>
+            </td>
+        </tr>
 
-		$("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+        </tbody>
+    </table>
+</div>
+<!-- 分页条信息   -->
+<div class=".col-md-6" style="margin-left: 700px">
+    <nav aria-label="Page navigation" th:if="${pageInfo.pages != 1}">
+        <ul class="pagination">
+            <li>
+                <a href="#" th:href="@{'/triageList?pn=' + 1}">首页</a>
+            </li>
+            <th:block th:if="${pageInfo.hasPreviousPage}">
+                <li>
+                    <a href="#" th:href="@{'/triageList?pn='+${pageInfo.prePage}}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            </th:block>
+            <th:block th:each="pageNum : ${pageInfo.navigatepageNums}">
+                <li th:class="${pageNum == pageInfo.pageNum} ? 'active' : '' ">
+                    <a href="#" th:href="@{'/triageList?pn='+${pageNum}}" th:text="${pageNum}">1</a>
+                </li>
+            </th:block>
+            <th:block th:if="${pageInfo.hasNextPage}">
+                <li>
+                    <a href="#" th:href="@{'/triageList?pn='+${pageInfo.nextPage}}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
 
-		showRemind('input[type=text], textarea', 'placeholder');
-	</script>
+            </th:block>
+            <li><a href="#"  th:href="@{'/triageList?pn=' + ${pageInfo.pages}}">末页</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+<script type="text/javascript" src="../../../static/js/jquery.js"></script>
+<script type="text/javascript" src="../../../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+<script type="text/javascript">
+
+
+    //全选 全不选
+    $("#check_all").click(function () {
+        // alert($(this).prop("checked"));
+        $(".id_item").prop("checked", $(this).prop("checked"));
+    });
+
+    $(document).on("click", "#ids", function () {
+        //判断当前选择的是否为5个
+        // if($("#ids:checked").length == $("#ids").length){
+        // 	$("#check_all").prop("checked",true);
+        // } else{
+        // 	$("#check_all").prop("checked",false);
+        // }
+        var flag = $(".id_item:checked").length == $(".id_item").length;
+        $("#check_all").prop("checked", flag);
+    });
+
+    $("#delete_all").click(function () {
+        var id = "";
+        $.each($("#ids:checked"), function () {
+            id += $(this).parent().next().text() + "-";
+        });
+        id = id.substring(0, id.length - 1);
+        if (confirm("确认删除吗？")) {
+            $("#delete_all").attr("href","/deletePatient/" + id);
+            // $.ajax({
+            //     url: "/deletePatient/" + id,
+            //     type: "GET"
+            // });
+
+        }
+    });
+    $(".select-title").on("click", function () {
+        $(".select-list").hide();
+        $(this).siblings($(".select-list")).show();
+        return false;
+    })
+    $(".select-list").on("click", "li", function () {
+        var txt = $(this).text();
+        $(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
+    })
+
+    $('.pagination').pagination(100, {
+        callback: function (page) {
+            alert(page);
+        },
+        display_msg: true,
+        setPageNo: true
+    });
+
+    $("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+
+    showRemind('input[type=text], textarea', 'placeholder');
+</script>
 
 </html>

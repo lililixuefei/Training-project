@@ -123,7 +123,7 @@ public class PatientController {
     }
 
     /**
-     * 去添加页面，信息回显
+     * 点击修改，拿到数据后去更新页面
      *
      * @param id
      * @param model
@@ -162,16 +162,6 @@ public class PatientController {
         return "redirect:/patientList";
     }
 
-    @RequestMapping("/depart")
-    public String departmentList() {
-        return "DepartmentList";
-    }
-
-    @RequestMapping("/triageList")
-    public String triageList() {
-        return "TriageList";
-    }
-
     /**
      * 点击去添加页面
      *
@@ -179,9 +169,6 @@ public class PatientController {
      */
     @GetMapping("/patientAdd")
     public String getPatient(Model model) {
-        Patient patient = patientService.findPatientById("1");
-        System.out.println(patient);
-        model.addAttribute("patient", patient);
         return "PatientAdd";
     }
 }

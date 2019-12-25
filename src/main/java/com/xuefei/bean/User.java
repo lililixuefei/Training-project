@@ -93,4 +93,19 @@ public class User {
     public void setDeptId(String deptId) {
         this.deptId = deptId == null ? null : deptId.trim();
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", realname='" + realname + '\'' +
+                ", sex=" + sex +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", pic='" + pic + '\'' +
+                ", deptId='" + deptId + '\'' +
+                '}';
+    }
 }

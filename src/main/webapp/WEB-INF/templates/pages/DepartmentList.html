@@ -1,127 +1,175 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="../../../static/css/base.css" />
-		<link rel="stylesheet" href="../../../static/css/info-mgt.css" />
-		<link rel="stylesheet" href="../../../static/css/WdatePicker.css" />
-		<title>分诊管理系统</title>
-		<style type="text/css">
-			table>tbody>tr {}
-			
-			input.confirm {
-				float: left;
-				width: 117px;
-				height: 39px;
-				background: url(../../../static/images/login_btn.png);
-				color: #fff;
-				text-align: center;
-				font-size: 16px;
-				font-family: '微软雅黑';
-			}
-		</style>
-	</head>
-	<body>
-		<div class="title">
-			<h2>科室管理</h2></div>
-		<div class="table-operate ue-clear">
-			<a href="javascript:;" class="del" style="width: 65px;">删除选中</a>
-			<form action="PatientList.html" method="post">
-				<div class="input-box ue-clear">
-					<label>模糊查询</label>
-					<input style="border: solid lightblue 0.5px; width: 200px;height: 28px;" type="text" placeholder="姓名|身份证|手机号" />
-					<input type="submit" value="搜索" style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(images/login_btn.png) no-repeat;background-size: 100px 30px" />
-				</div>
-			</form>
-		</div>
-		<div class="table-box">
-			<table>
-				<thead>
-					<tr>
-						<th></th>
-						<th>科室编号</th>
-						<th>科室名称</th>
-						<th>办公室电话</th>
-						<th>所在区域</th>
-						<th class="operate">操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>10001110</td>
-						<td>骨科</td>
-						<td>12345678</td>
-						<td>14楼A区</td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/delico.png" width="10px" />删除</a>
-							<a href="PatientUpdate.html"><img src="../../../static/images/edtico.png" width="10px" />修改</a>
-						</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>10001110</td>
-						<td>骨科</td>
-						<td>12345678</td>
-						<td>14楼A区</td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/delico.png" width="10px" />删除</a>
-							<a href="PatientUpdate.html"><img src="../../../static/images/edtico.png" width="10px" />修改</a>
-						</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>10001110</td>
-						<td>骨科</td>
-						<td>12345678</td>
-						<td>14楼A区</td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/delico.png" width="10px" />删除</a>
-							<a href="PatientUpdate.html"><img src="../../../static/images/edtico.png" width="10px" />修改</a>
-						</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="ids" id="ids" /></td>
-						<td>10001110</td>
-						<td>骨科</td>
-						<td>12345678</td>
-						<td>14楼A区</td>
-						<td class="operate">
-							<a href="javascript:;"><img src="../../../static/images/delico.png" width="10px" />删除</a>
-							<a href="PatientUpdate.html"><img src="../../../static/images/edtico.png" width="10px" />修改</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="pagination ue-clear"></div>
-	</body>
-	<script type="text/javascript" src="../../../static/js/jquery-3.4.1.min.js" th:src="@{/static/js/jquery-3.4.1.min.js}"></script>
-	<script type="text/javascript" src="../../../static/js/common.js"></script>
-	<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
-	<script type="text/javascript" src="../../../static/js/jquery.pagination.js"></script>
-	<script type="text/javascript">
-		$(".select-title").on("click", function() {
-			$(".select-list").hide();
-			$(this).siblings($(".select-list")).show();
-			return false;
-		})
-		$(".select-list").on("click", "li", function() {
-			var txt = $(this).text();
-			$(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
-		})
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../static/css/base.css"/>
+    <link rel="stylesheet" href="../../../static/css/info-mgt.css"/>
+    <link rel="stylesheet" href="../../../static/css/WdatePicker.css"/>
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" th:href="@{/static/css/bootstrap.min.css}"/>
+    <title>分诊管理系统</title>
+    <style type="text/css">
+        table > tbody > tr {
+        }
 
-		$('.pagination').pagination(100, {
-			callback: function(page) {
-				alert(page);
-			},
-			display_msg: true,
-			setPageNo: true
-		});
+        input.confirm {
+            float: left;
+            width: 117px;
+            height: 39px;
+            background: url(../../../static/images/login_btn.png);
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+    </style>
+</head>
+<body>
+<div class="title">
+    <h2>科室管理</h2></div>
+<div class="table-operate ue-clear">
+    <a href="javascript:;" id="delete_all" class="del" style="width: 65px;">删除选中</a>
+    <form action="#" th:action="@{/fuzzyQueryDepart}" method="post">
+        <div class="input-box ue-clear">
+            <label>模糊查询</label>
+            <input style="border: solid lightblue 0.5px; width: 200px;height: 28px;" type="text" name="fuzzy"
+                   placeholder="名称|电话|区域"/>
+            <input type="submit" value="搜索"
+                   style="width:100px;color: #fff;font-family: '微软雅黑';border: hidden;cursor: pointer;background: url(../../../static/images/login_btn.png) no-repeat;background-size: 100px 30px"/>
+        </div>
+    </form>
+</div>
+<div class="table-box">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="check_all">
+            </th>
+            <th>科室编号</th>
+            <th>科室名称</th>
+            <th>办公室电话</th>
+            <th>所在区域</th>
+            <th class="operate">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="department : ${pageInfo.list}">
+            <td><input type="checkbox" name="ids" id="ids" class="id_item"/></td>
+            <td th:text="${department.getId()}">10001110</td>
+            <td th:text="${department.getName()}">骨科</td>
+            <td th:text="${department.getTelephone()}">12345678</td>
+            <td th:text="${department.getArea()}">14楼A区</td>
+            <td class="operate">
+                <a href="#" th:href="@{/deleteDepartment/{id}(id=${department.getId()})}"><img src="../../../static/images/delico.png" width="10px"/>删除</a>
+                <a href="#" th:href="@{/departmentUpdate/{id}(id=${department.getId()})}"><img src="../../../static/images/edtico.png" width="10px"/>修改</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--分页信息-->
+<div class="row">
+    <!--  分页文字信息  -->
+    <div class=".col-md-6" style="margin-left: 50px;margin-top: 20px">
+        当前第<span th:text="${pageInfo.pageNum}"></span>页,
+        总共<span th:text="${pageInfo.pages}"></span>页,
+        总共<span th:text="${pageInfo.total}"></span>条记录
+    </div>
+    <!-- 分页条信息   -->
+    <div class=".col-md-6" style="margin-left: 700px">
+        <nav aria-label="Page navigation" th:if="${pageInfo.pages != 1}">
+            <ul class="pagination">
+                <li>
+                    <a href="#" th:href="@{'/depart?pn=' + 1}">首页</a>
+                </li>
+                <th:block th:if="${pageInfo.hasPreviousPage}">
+                    <li>
+                        <a href="#" th:href="@{'/depart?pn='+${pageInfo.prePage}}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </th:block>
+                <th:block th:each="pageNum : ${pageInfo.navigatepageNums}">
+                    <li th:class="${pageNum == pageInfo.pageNum} ? 'active' : '' ">
+                        <a href="#" th:href="@{'/depart?pn='+${pageNum}}" th:text="${pageNum}">1</a>
+                    </li>
+                </th:block>
+                <th:block th:if="${pageInfo.hasNextPage}">
+                    <li>
+                        <a href="#" th:href="@{'/depart?pn='+${pageInfo.nextPage}}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
 
-		$("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+                </th:block>
+                <li><a href="#"  th:href="@{'/depart?pn=' + ${pageInfo.pages}}">末页</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../../../static/js/jquery-3.4.1.min.js"
+        th:src="@{/static/js/jquery-3.4.1.min.js}"></script>
+<script type="text/javascript" src="../../../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+<script type="text/javascript">
 
-		showRemind('input[type=text], textarea', 'placeholder');
-	</script>
+    //全选 全不选
+    $("#check_all").click(function () {
+        // alert($(this).prop("checked"));
+        $(".id_item").prop("checked", $(this).prop("checked"));
+    });
+
+    $(document).on("click", "#ids", function () {
+        //判断当前选择的是否为5个
+        // if($("#ids:checked").length == $("#ids").length){
+        // 	$("#check_all").prop("checked",true);
+        // } else{
+        // 	$("#check_all").prop("checked",false);
+        // }
+        var flag = $(".id_item:checked").length == $(".id_item").length;
+        $("#check_all").prop("checked", flag);
+    });
+
+    $("#delete_all").click(function () {
+        var id = "";
+        $.each($("#ids:checked"), function () {
+            id += $(this).parent().next().text() + "-";
+        });
+        id = id.substring(0, id.length - 1);
+        if (confirm("确认删除吗？")) {
+            $("#delete_all").attr("href","/deleteDepartment/" + id);
+            // $.ajax({
+            //     url: "/deletePatient/" + id,
+            //     type: "GET"
+            // });
+
+        }
+    });
+
+
+    $(".select-title").on("click", function () {
+        $(".select-list").hide();
+        $(this).siblings($(".select-list")).show();
+        return false;
+    })
+    $(".select-list").on("click", "li", function () {
+        var txt = $(this).text();
+        $(this).parent($(".select-list")).siblings($(".select-title")).find("span").text(txt);
+    })
+
+    $('.pagination').pagination(100, {
+        callback: function (page) {
+            alert(page);
+        },
+        display_msg: true,
+        setPageNo: true
+    });
+
+    $("tbody").find("tr:odd").css("backgroundColor", "#eff6fa");
+
+    showRemind('input[type=text], textarea', 'placeholder');
+</script>
 
 </html>

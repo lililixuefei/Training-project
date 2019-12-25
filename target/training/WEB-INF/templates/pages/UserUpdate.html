@@ -1,0 +1,77 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../static/css/base.css"/>
+    <link rel="stylesheet" href="../../../static/css/info-reg.css"/>
+    <script src="../../../static/js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+    <title>修改后台管理员信息</title>
+</head>
+
+<body>
+<div class="title"><h2>修改患者信息</h2></div>
+<div class="main">
+    <form id='updateForm' th:action="@{/UserUpdate}" method="post">
+        <input type="hidden" name="id" th:if="${user!=null}" th:value="${user.getId()}">
+        <p class="short-input ue-clear">
+            <label>用户名：</label>
+            <input type="text" name="username" th:value="${user.getUsername()}" />
+        </p>
+        <p class="short-input ue-clear">
+            <label>真实姓名：</label>
+            <input type="text" name="realname" th:value="${user.getRealname()}" />
+        </p>
+        <p class="short-input ue-clear">
+            <label>邮箱：</label>
+            <input type="text" name="email" th:value="${user.getEmail()}" id="email"/>
+        </p>
+        <div class="short-input select ue-clear">
+            <label>性别：</label>
+            <div class="select-wrap">
+                <input type="radio" name="sex" th:checked="${user.getSex()==1}? true:false" value="1" id="sex"/>男
+                <input type="radio" name="sex" th:checked="${user.getSex()==0}? true:false" value="0" id="sex"/>女
+                <input type="radio" name="sex" th:checked="${user.getSex()==2}? true:false" value="2" id="sex"/>其他
+            </div>
+        </div>
+        <p class="short-input ue-clear">
+            <label>所属科室：</label>
+            <select name="deptId" id="">
+                <option th:value="${dept.id}" th:each="dept : ${depts}" th:text="${dept.getName()}"></option>
+            </select>
+        </p>
+        <p class="long-input ue-clear">
+            <label>联系电话：</label>
+            <input type="text" name="mobile" th:value="${user.getMobile()}" id="mobile" placeholder=""/>
+        </p>
+    </form>
+</div>
+<div class="btn ue-clear">
+    <a href="javascript:;" class="confirm" onclick="return updateForm()">确定</a>
+</div>
+</body>
+<script type="text/javascript" src="../../../static/js/jquery.js"></script>
+<script type="text/javascript" src="../../../static/js/common.js"></script>
+<script type="text/javascript" src="../../../static/js/WdatePicker.js"></script>
+
+<script type="text/javascript">
+    /**
+     * 提交表单
+     */
+    function updateForm() {
+        console.log("-----")
+        $('#updateForm').submit();
+    }
+
+    $(".select-title").on("click", function () {
+        $(".select-list").toggle();
+        return false;
+    });
+    $(".select-list").on("click", "li", function () {
+        var txt = $(this).text();
+        $(".select-title").find("span").text(txt);
+    });
+
+
+    showRemind('input[type=text], textarea', 'placeholder');
+</script>
+</html>
