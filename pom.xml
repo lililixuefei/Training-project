@@ -85,7 +85,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.17</version>
+      <version>8.0.28</version>
     </dependency>
 
     <!--slf4j与log4j的桥接包,里面包括了：log4j-api,log4j-core和slf4j-api-->
